@@ -40,5 +40,15 @@ public class AdminServiceOperation implements AdminService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public Admin create(Admin Admin) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void insert(Admin Admin) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
