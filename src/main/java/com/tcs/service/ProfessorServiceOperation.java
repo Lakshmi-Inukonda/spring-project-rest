@@ -36,5 +36,15 @@ public class ProfessorServiceOperation implements ProfessorService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public Professor create(Professor Professor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void insert(Professor Professor) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
