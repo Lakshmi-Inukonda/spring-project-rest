@@ -10,6 +10,8 @@ import com.tcs.bean.Professor;
  *
  */
 public class ProfessorServiceOperation implements ProfessorService {
+	@Autowired
+	private ProfessorDAOInterface professors;
 
 	@Override
 	public Professor registeredCourses() {
