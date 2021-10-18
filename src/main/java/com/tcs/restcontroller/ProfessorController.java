@@ -41,4 +41,32 @@ public class ProfessorController {
 			return c1;
 			   
 		}
+	
+	@Autowired //CustomerDAO customerDAOOperation = new CustomerDAO();
+	private ProfessorService professors;
+	
+	@RequestMapping("/registeredCourses")
+	public List getProfessors() {
+		return professors.professorList();
+	}
+	
+
+	@RequestMapping("/viewStudentInfo")
+		public List getProfessors() {
+			return professors.professorList();
+	}
+
+	@RequestMapping("/assignGrades")
+		public List getProfessors() {
+			return professors.professorList();
+	}
+
+	@RequestMapping(value = "/post/professors")
+	public ResponseEntity create(@RequestBody Professor Professor) {
+
+		ProfessorDAOImpl.insert(Professor);
+
+		return new ResponseEntity(Professor, HttpStatus.OK);
+	}
+
 }
