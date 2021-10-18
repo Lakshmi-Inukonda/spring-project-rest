@@ -41,4 +41,33 @@ public class AdminController {
 			return c1;
 			   
 		}
+	
+	@RequestMapping("/approveStudReg")
+	public List getStudents() {
+		return students.studentList();
+	}
+	@RequestMapping("/addNewProf")
+	public List getStudents() {
+		return students.studentList();
+	}	
+	@RequestMapping("/removeProf")
+	public List getStudents() {
+		return students.studentList();
+	}	
+	@RequestMapping("/generateGradeCard")
+	public List getStudents() {
+		return students.studentList();
+	}	
+	@RequestMapping("/addCourses")
+	public List getStudents() {
+		return students.studentList();
+	}
+	@RequestMapping(value = "/post/admin")
+	public ResponseEntity create(@RequestBody Admin Admin) {
+
+		AdminDAOImpl.insert(Admin);
+
+		return new ResponseEntity(Admin, HttpStatus.OK);
+	}	
+
 }
