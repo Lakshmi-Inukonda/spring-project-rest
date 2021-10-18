@@ -15,4 +15,6 @@ public interface AdminService {
 	public Admin removeProf();
 	public Admin generateGradeCard();
 	public Admin addCourses();
+	public Admin create(Admin Admin);
+	public void insert(Admin Admin);
 }
