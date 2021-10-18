@@ -10,8 +10,10 @@ import com.tcs.bean.Professor;
  *
  */
 public interface ProfessorService {
-	public List studentList();
+	public List professorList();
 	public Professor registeredCourses();
 	public Professor viewStudentInfo();
 	public Professor assignGrades();
+	public Professor create(Professor Professor);
+	public void insert(Professor Professor);
 }
