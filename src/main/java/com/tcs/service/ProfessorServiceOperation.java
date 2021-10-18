@@ -12,6 +12,12 @@ import com.tcs.bean.Professor;
 public class ProfessorServiceOperation implements ProfessorService {
 	@Autowired
 	private ProfessorDAOInterface professors;
+	
+	@Override
+	public List professorList() {
+		// TODO Auto-generated method stub
+		return professors.list();
+	}
 
 	@Override
 	public Professor registeredCourses() {
